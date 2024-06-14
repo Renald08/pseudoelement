@@ -1,0 +1,136 @@
+body {
+    font-family: Georgia, serif;
+    margin: 50px 100px 20px 420px;
+    padding: 50px;
+    background-color: darkgreen;
+    background: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+
+.cart{
+    position: absolute;
+    background-color: #67c8e6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 399px;
+    width: 350px;
+    border-radius: 40px;
+    
+}
+
+.gradient{
+    position: absolute;
+    background-image: linear-gradient(0deg, #275f70, transparent);
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37)
+}
+
+
+.main-header {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.intro-paragraph {
+    font-size: 16px;
+    color: #0b1731;
+    margin: 20px;
+    position: center;
+    text-align: center;
+}
+
+.cta-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    margin: 30px 99px ;
+    border-radius: 15px;
+    border: 1px solid #105263;
+    background-color: #3c88da;
+    color: #5d0a68;
+    transition: all 0.3s ease;
+    font-family: Georgia, serif;
+    transition: background-color 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+
+.main-header::before,
+.main-header::after,
+.intro-paragraph::before,
+.intro-paragraph::after,
+.cta-button::before,
+.cta-button::after {
+    content: '';
+    position: center;
+}
+
+.main-header::before,
+.main-header::after {
+    content: '*';
+    color: gold;
+}
+
+.intro-paragraph::before,
+.intro-paragraph::after {
+    content: '"';
+    color: #666;
+}
+
+.cta-button::before 
+{
+    content: '👉';
+    color: #fff;
+}
+
+.cta-button::after {
+    content: '👈';
+    color: #fff;
+margin: 0 0 20px;
+}
+
+
+.main-header::before {
+    left: 0;
+}
+
+.main-header::after {
+    right: 0;
+}
+
+.intro-paragraph::before {
+    left: 0;
+}
+
+.intro-paragraph::after {
+    right: 0;
+}
+
+.cta-button::before {
+    left: 0;
+}
+
+.cta-button::after {
+    right: 0;
+}
+
+.cta-button:hover{
+    color: #275f70;
+}
+
+
+.cta-button:active {
+    font-size: 20px;
+    color: #a01fb1;
+}
